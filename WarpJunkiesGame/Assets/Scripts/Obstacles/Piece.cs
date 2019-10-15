@@ -1,0 +1,18 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public enum PieceType
+{
+    none = -1,
+    wall = 0,
+    barrier = 1,
+    jump = 2,
+    slide = 3
+}
+
+public class Piece : MonoBehaviour
+{
+    public PieceType type;
+    public int visualIndex;
+}
